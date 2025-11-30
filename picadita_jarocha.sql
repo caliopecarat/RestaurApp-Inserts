@@ -278,6 +278,57 @@ VALUES
 
    -- ÁREAS DE VENTA LA PICADITA JAROCHA
 
+-- 1. Soriana Cuauhtémoc (Mina) - chica, 1 planta
+-- Solo atención en mostrador
+INSERT INTO areaventa (sucursal_id, nombre)
+VALUES
+(1, 'Mostrador');
 
+-- 2. Centro Mina - 1 planta con comedor
+-- Un solo comedor
+INSERT INTO areaventa (sucursal_id, nombre)
+VALUES
+(2, 'Comedor'),
+(2, 'Mostrador');
+
+-- 3. Instituto Tecnológico (Mina) - 2 plantas
+-- Comedor en planta baja y alta + mostrador
+INSERT INTO areaventa (sucursal_id, nombre)
+VALUES
+(3, 'Comedor Planta Baja'),
+(3, 'Comedor Planta Alta'),
+(3, 'Mostrador');
+
+-- 4. Centro Coatzacoalcos - 2 plantas
+INSERT INTO areaventa (sucursal_id, nombre)
+VALUES
+(4, 'Comedor Planta Baja'),
+(4, 'Comedor Planta Alta'),
+(4, 'Mostrador');
+
+-- 5. Soriana Palmar - chica, 1 planta
+-- Local pequeñito, solo mostrador
+INSERT INTO areaventa (sucursal_id, nombre)
+VALUES
+(5, 'Mostrador');
+
+-- 6. Soriana Mercado - chica, 1 planta, pura barra
+INSERT INTO areaventa (sucursal_id, nombre)
+VALUES
+(6, 'Barra / Mostrador');
+
+-- 7. Malecón - 2 plantas
+INSERT INTO areaventa (sucursal_id, nombre)
+VALUES
+(7, 'Comedor Planta Baja'),
+(7, 'Comedor Planta Alta'),
+(7, 'Mostrador');
+
+-- 8. Gaviotas - 2 plantas
+INSERT INTO areaventa (sucursal_id, nombre)
+VALUES
+(8, 'Comedor Planta Baja'),
+(8, 'Comedor Planta Alta'),
+(8, 'Mostrador');
 
 
