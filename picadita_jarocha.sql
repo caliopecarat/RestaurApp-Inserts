@@ -278,49 +278,6 @@ VALUES
 
    -- ÁREAS DE VENTA LA PICADITA JAROCHA
 
--- 1. Soriana Cuauhtémoc (Mina)
-INSERT INTO areaventa (sucursal_id, nombre)
-VALUES
-(1, 'Mostrador');
-
--- 2. Centro Mina
-INSERT INTO areaventa (sucursal_id, nombre)
-VALUES
-(2, 'Comedor Interior'),
-(2, 'Mostrador');
-
--- 3. Instituto Tecnológico (Mina)
-INSERT INTO areaventa (sucursal_id, nombre)
-VALUES
-(3, 'Mostrador');
-
--- 4. Centro Coatzacoalcos
-INSERT INTO areaventa (sucursal_id, nombre)
-VALUES
-(4, 'Comedor Interior'),
-(4, 'Mostrador');
-
--- 5. Soriana Palmar (Coatza)
-INSERT INTO areaventa (sucursal_id, nombre)
-VALUES
-(5, 'Mostrador');
-
--- 6. Soriana Mercado (Coatza)
-INSERT INTO areaventa (sucursal_id, nombre)
-VALUES
-(6, 'Barra / Mostrador');
-
--- 7. Malecón
-INSERT INTO areaventa (sucursal_id, nombre)
-VALUES
-(7, 'Comedor Interior'),
-(7, 'Mostrador');
-
--- 8. Gaviotas
-INSERT INTO areaventa (sucursal_id, nombre)
-VALUES
-(8, 'Comedor Interior'),
-(8, 'Mostrador');
 
 
 
