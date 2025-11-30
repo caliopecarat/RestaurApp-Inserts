@@ -383,13 +383,13 @@ VALUES
 
 -- 1. Soriana Cuauhtémoc (Mina) - chica, 1 planta
 -- Solo atención en mostrador
-INSERT INTO areaventa (sucursal_id, nombre)
+INSERT INTO area_venta (sucursal_id, nombre)
 VALUES
 (1, 'Mostrador');
 
 -- 2. Centro Mina - 1 planta con comedor
 -- Un solo comedor
-INSERT INTO areaventa (sucursal_id, nombre)
+INSERT INTO area_venta (sucursal_id, nombre)
 VALUES
 (2, 'Comedor'),
 (2, 'Mostrador');
