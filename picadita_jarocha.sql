@@ -15,7 +15,7 @@ VALUES
   --Coatza
   (1, 'Centro', 'Av. Hidalgo N° 600, Esq. Allende, Col. Centro', 'Coatazacoalcos', '9212121386'),
   (1, 'Soriana Palmar', 'Av. Las palmas N° 101 Int. Loc. 17, Col. Paraíso', 'Coatazacoalcos', '9212121386'),--CENTRO Y PALMAS TIENE EL MISMO NUM
-  (1, 'Soriana Mercado', 'Blvd. Juan Osorio Lopez N. 100 Int. Loc. 2, 3 y 4, Col. Héroes de Nacozari', 'Coatazacoalcos', '9212173716')
+  (1, 'Soriana Mercado', 'Blvd. Juan Osorio Lopez N. 100 Int. Loc. 2, 3 y 4, Col. Héroes de Nacozari', 'Coatazacoalcos', '9212173716'),
   (1, 'Malecon', 'Malecón 2407, Petroquimica', 'Coatazacoalcos', '9212137072'),
   (1, 'Gaviotas', 'Avenida Jirafas No. 137-A esquina Ceiba Col. Gaviotas', 'Coatazacoalcos', '9216882551');
 /*
@@ -173,6 +173,107 @@ INSERT INTO descuento (nombre_convenio, tipo, porcentaje, monto_fijo, empresa, m
 VALUES
 ('Tarjetas Afiliadas - 5% monedero (tarjeta)', 'MONEDERO', NULL, NULL,
  'SAMS / CANACO / Caja Popular / Diario del Istmo', 5, TRUE);
+-- ITESCO
+INSERT INTO descuento (nombre_convenio, tipo, porcentaje, monto_fijo, empresa, monedero_ahorro, activo)
+VALUES
+('ITESCO - 10% monedero (efectivo)', 'MONEDERO', NULL, NULL, 'ITESCO', 10, TRUE),
+('ITESCO - 5% monedero (tarjeta)',   'MONEDERO', NULL, NULL, 'ITESCO',  5, TRUE);
+
+-- Al Super / La Mexicana (ajusta el nombre si quieres)
+INSERT INTO descuento (nombre_convenio, tipo, porcentaje, monto_fijo, empresa, monedero_ahorro, activo)
+VALUES
+('Al Super Mexicana - 10% monedero (efectivo)', 'MONEDERO', NULL, NULL, 'Al Super Mexicana', 10, TRUE),
+('Al Super Mexicana - 5% monedero (tarjeta)',   'MONEDERO', NULL, NULL, 'Al Super Mexicana',  5, TRUE);
+
+-- Etileno XXI
+INSERT INTO descuento (nombre_convenio, tipo, porcentaje, monto_fijo, empresa, monedero_ahorro, activo)
+VALUES
+('Etileno XXI - 10% monedero (efectivo)', 'MONEDERO', NULL, NULL, 'Etileno XXI', 10, TRUE),
+('Etileno XXI - 5% monedero (tarjeta)',   'MONEDERO', NULL, NULL, 'Etileno XXI',  5, TRUE);
+
+-- CROM
+INSERT INTO descuento (nombre_convenio, tipo, porcentaje, monto_fijo, empresa, monedero_ahorro, activo)
+VALUES
+('CROM - 10% monedero (efectivo)', 'MONEDERO', NULL, NULL, 'CROM', 10, TRUE),
+('CROM - 5% monedero (tarjeta)',   'MONEDERO', NULL, NULL, 'CROM',  5, TRUE);
+
+-- Grúas Villarreal
+INSERT INTO descuento (nombre_convenio, tipo, porcentaje, monto_fijo, empresa, monedero_ahorro, activo)
+VALUES
+('Grúas Villarreal - 10% monedero (efectivo)', 'MONEDERO', NULL, NULL, 'Grúas Villarreal', 10, TRUE),
+('Grúas Villarreal - 5% monedero (tarjeta)',   'MONEDERO', NULL, NULL, 'Grúas Villarreal',  5, TRUE);
+
+-- AMA
+INSERT INTO descuento (nombre_convenio, tipo, porcentaje, monto_fijo, empresa, monedero_ahorro, activo)
+VALUES
+('AMA - 10% monedero (efectivo)', 'MONEDERO', NULL, NULL, 'AMA', 10, TRUE),
+('AMA - 5% monedero (tarjeta)',   'MONEDERO', NULL, NULL, 'AMA',  5, TRUE);
+
+-- Club Deportivo
+INSERT INTO descuento (nombre_convenio, tipo, porcentaje, monto_fijo, empresa, monedero_ahorro, activo)
+VALUES
+('Club Deportivo - 10% monedero (efectivo)', 'MONEDERO', NULL, NULL, 'Club Deportivo', 10, TRUE),
+('Club Deportivo - 5% monedero (tarjeta)',   'MONEDERO', NULL, NULL, 'Club Deportivo',  5, TRUE);
+
+-- Pro Agroindustria
+INSERT INTO descuento (nombre_convenio, tipo, porcentaje, monto_fijo, empresa, monedero_ahorro, activo)
+VALUES
+('Pro Agroindustria - 10% monedero (efectivo)', 'MONEDERO', NULL, NULL, 'Pro Agroindustria', 10, TRUE),
+('Pro Agroindustria - 5% monedero (tarjeta)',   'MONEDERO', NULL, NULL, 'Pro Agroindustria',  5, TRUE);
+
+-- Banamex
+INSERT INTO descuento (nombre_convenio, tipo, porcentaje, monto_fijo, empresa, monedero_ahorro, activo)
+VALUES
+('Banamex - 10% monedero (efectivo)', 'MONEDERO', NULL, NULL, 'Banamex', 10, TRUE),
+('Banamex - 5% monedero (tarjeta)',   'MONEDERO', NULL, NULL, 'Banamex',  5, TRUE);
+
+-- Servifácil
+INSERT INTO descuento (nombre_convenio, tipo, porcentaje, monto_fijo, empresa, monedero_ahorro, activo)
+VALUES
+('Servifácil - 10% monedero (efectivo)', 'MONEDERO', NULL, NULL, 'Servifácil', 10, TRUE),
+('Servifácil - 5% monedero (tarjeta)',   'MONEDERO', NULL, NULL, 'Servifácil',  5, TRUE);
+
+-- Renault
+INSERT INTO descuento (nombre_convenio, tipo, porcentaje, monto_fijo, empresa, monedero_ahorro, activo)
+VALUES
+('Renault - 10% monedero (efectivo)', 'MONEDERO', NULL, NULL, 'Renault', 10, TRUE),
+('Renault - 5% monedero (tarjeta)',   'MONEDERO', NULL, NULL, 'Renault',  5, TRUE);
+
+-- Praxair
+INSERT INTO descuento (nombre_convenio, tipo, porcentaje, monto_fijo, empresa, monedero_ahorro, activo)
+VALUES
+('Praxair - 10% monedero (efectivo)', 'MONEDERO', NULL, NULL, 'Praxair', 10, TRUE),
+('Praxair - 5% monedero (tarjeta)',   'MONEDERO', NULL, NULL, 'Praxair',  5, TRUE);
+
+-- Policía Estatal
+INSERT INTO descuento (nombre_convenio, tipo, porcentaje, monto_fijo, empresa, monedero_ahorro, activo)
+VALUES
+('Policía Estatal - 10% monedero (efectivo)', 'MONEDERO', NULL, NULL, 'Policía Estatal', 10, TRUE),
+('Policía Estatal - 5% monedero (tarjeta)',   'MONEDERO', NULL, NULL, 'Policía Estatal',  5, TRUE);
+
+-- GPI (grupo poliformas)
+INSERT INTO descuento (nombre_convenio, tipo, porcentaje, monto_fijo, empresa, monedero_ahorro, activo)
+VALUES
+('GPI - 10% monedero (efectivo)', 'MONEDERO', NULL, NULL, 'GPI', 10, TRUE),
+('GPI - 5% monedero (tarjeta)',   'MONEDERO', NULL, NULL, 'GPI',  5, TRUE);
+
+-- Paquetexpress
+INSERT INTO descuento (nombre_convenio, tipo, porcentaje, monto_fijo, empresa, monedero_ahorro, activo)
+VALUES
+('Paquetexpress - 10% monedero (efectivo)', 'MONEDERO', NULL, NULL, 'Paquetexpress', 10, TRUE),
+('Paquetexpress - 5% monedero (tarjeta)',   'MONEDERO', NULL, NULL, 'Paquetexpress',  5, TRUE);
+
+-- MG Motors
+INSERT INTO descuento (nombre_convenio, tipo, porcentaje, monto_fijo, empresa, monedero_ahorro, activo)
+VALUES
+('MG Motors - 10% monedero (efectivo)', 'MONEDERO', NULL, NULL, 'MG Motors', 10, TRUE),
+('MG Motors - 5% monedero (tarjeta)',   'MONEDERO', NULL, NULL, 'MG Motors',  5, TRUE);
+
+-- Consejo de la Judicatura Federal
+INSERT INTO descuento (nombre_convenio, tipo, porcentaje, monto_fijo, empresa, monedero_ahorro, activo)
+VALUES
+('CJF - 10% monedero (efectivo)', 'MONEDERO', NULL, NULL, 'Consejo de la Judicatura Federal', 10, TRUE),
+('CJF - 5% monedero (tarjeta)',   'MONEDERO', NULL, NULL, 'Consejo de la Judicatura Federal',  5, TRUE);
 
 
 -- 3) TARJETA DINERO ELECTRÓNICO (PROGRAMA DE LEALTAD)
@@ -238,6 +339,10 @@ VALUES
 INSERT INTO descuento (nombre_convenio, tipo, porcentaje, monto_fijo, empresa, monedero_ahorro, activo)
 VALUES
 ('UNID - 60% inscripción', 'CONVENIO_EXTERNO', 60, NULL, 'UNID', NULL, TRUE);
+--DQ
+INSERT INTO descuento (nombre_convenio, tipo, porcentaje, monto_fijo, empresa, monedero_ahorro, activo)
+VALUES
+('Dairy Queen - Cono gratis con ticket de $370', 'CONVENIO_EXTERNO', NULL, NULL, 'Dairy Queen', NULL, TRUE);
 
 /*PROMOCIONES SEMANALES LA PICADITA JAROCHA
    Todas tipo 2x1 aplicadas por día. */
