@@ -43,8 +43,6 @@ INSERT INTO rol (nombre, descripcion)
   ('Ayudante de cocina', 'Apoyo en cocina'),
   ('Cajero', 'Cobro y facturación');
 
-INSERT INTO empleado (sucursal_id, rol_id, nombre, apellido, estado, contraseña)
-VALUES 
   INSERT INTO empleado (sucursal_id, rol_id, nombre, apellido, estado, contraseña)
 VALUES
     -- Sucursal 1: Soriana Cuauhtémoc (Mina)
@@ -331,4 +329,94 @@ VALUES
 (8, 'Comedor Planta Alta'),
 (8, 'Mostrador');
 
-uyftf8yfuvikuuvukyvb8u
+-- MESAS POR ÁREA DE VENTA
+
+-- 1. Soriana Cuauhtémoc (Mina)
+-- area_id = 1 → Mostrador (6 lugares)
+INSERT INTO mesa (area_id, num_mesa) VALUES
+(1,1),(1,2),(1,3),(1,4),(1,5),(1,6);
+
+
+-- 2. Centro Mina
+-- area_id = 2 → Comedor (8 mesas)
+INSERT INTO mesa (area_id, num_mesa) VALUES
+(2,1),(2,2),(2,3),(2,4),
+(2,5),(2,6),(2,7),(2,8);
+
+-- area_id = 3 → Mostrador (4 lugares)
+INSERT INTO mesa (area_id, num_mesa) VALUES
+(3,1),(3,2),(3,3),(3,4);
+
+
+-- 3. Instituto Tecnológico (Mina)
+-- area_id = 4 → Comedor Planta Baja (8 mesas)
+INSERT INTO mesa (area_id, num_mesa) VALUES
+(4,1),(4,2),(4,3),(4,4),
+(4,5),(4,6),(4,7),(4,8);
+
+-- area_id = 5 → Comedor Planta Alta (6 mesas)
+INSERT INTO mesa (area_id, num_mesa) VALUES
+(5,1),(5,2),(5,3),(5,4),(5,5),(5,6);
+
+-- area_id = 6 → Mostrador (4 lugares)
+INSERT INTO mesa (area_id, num_mesa) VALUES
+(6,1),(6,2),(6,3),(6,4);
+
+
+-- 4. Centro Coatzacoalcos
+-- area_id = 7 → Comedor Planta Baja (10 mesas)
+INSERT INTO mesa (area_id, num_mesa) VALUES
+(7,1),(7,2),(7,3),(7,4),(7,5),
+(7,6),(7,7),(7,8),(7,9),(7,10);
+
+-- area_id = 8 → Comedor Planta Alta (8 mesas)
+INSERT INTO mesa (area_id, num_mesa) VALUES
+(8,1),(8,2),(8,3),(8,4),
+(8,5),(8,6),(8,7),(8,8);
+
+-- area_id = 9 → Mostrador (4 lugares)
+INSERT INTO mesa (area_id, num_mesa) VALUES
+(9,1),(9,2),(9,3),(9,4);
+
+
+-- 5. Soriana Palmar
+-- area_id = 10 → Mostrador (6 lugares)
+INSERT INTO mesa (area_id, num_mesa) VALUES
+(10,1),(10,2),(10,3),(10,4),(10,5),(10,6);
+
+
+-- 6. Soriana Mercado
+-- area_id = 11 → Barra / Mostrador (8 lugares)
+INSERT INTO mesa (area_id, num_mesa) VALUES
+(11,1),(11,2),(11,3),(11,4),
+(11,5),(11,6),(11,7),(11,8);
+
+
+-- 7. Malecón
+-- area_id = 12 → Comedor Planta Baja (8 mesas)
+INSERT INTO mesa (area_id, num_mesa) VALUES
+(12,1),(12,2),(12,3),(12,4),
+(12,5),(12,6),(12,7),(12,8);
+
+-- area_id = 13 → Comedor Planta Alta (6 mesas)
+INSERT INTO mesa (area_id, num_mesa) VALUES
+(13,1),(13,2),(13,3),(13,4),(13,5),(13,6);
+
+-- area_id = 14 → Mostrador (4 lugares)
+INSERT INTO mesa (area_id, num_mesa) VALUES
+(14,1),(14,2),(14,3),(14,4);
+
+
+-- 8. Gaviotas
+-- area_id = 15 → Comedor Planta Baja (8 mesas)
+INSERT INTO mesa (area_id, num_mesa) VALUES
+(15,1),(15,2),(15,3),(15,4),
+(15,5),(15,6),(15,7),(15,8);
+
+-- area_id = 16 → Comedor Planta Alta (6 mesas)
+INSERT INTO mesa (area_id, num_mesa) VALUES
+(16,1),(16,2),(16,3),(16,4),(16,5),(16,6);
+
+-- area_id = 17 → Mostrador (4 lugares)
+INSERT INTO mesa (area_id, num_mesa) VALUES
+(17,1),(17,2),(17,3),(17,4);
