@@ -538,6 +538,7 @@ VALUES ('Menú General', '07:00:00', '23:00:00', NOW(), TRUE);
 
 -- 2. CATEGORÍAS (Estructura completa de la carta)
 INSERT INTO categoria (menu_id, nombre) VALUES 
+INSERT INTO categoria (menu_id, nombre) VALUES 
 (1, 'Picadas'),              -- 1
 (1, 'Memelas'),              -- 2
 (1, 'Huaraches'),            -- 3
@@ -565,17 +566,14 @@ INSERT INTO categoria (menu_id, nombre) VALUES
 (1, 'Arma tu Doblada'),      -- 25
 (1, 'Salsas y Mole Venta'),  -- 26
 (1, 'Ordenes de Productos'), -- 27
-(1, 'Ingredientes Extras'),  -- 28
-(1, 'Res'),                  -- 29
-(1, 'Cerdo'),                -- 30
-(1, 'Aves'),                 -- 31
-(1, 'Mariscos'),             -- 32
-(1, 'Varios'),               -- 33
-(1, 'Paquetes'),             -- 34
-(1, 'Comida Corrida'),       -- 35
-(1, 'Servicios');            -- 36
-
-
+(1, 'Res'),                  -- 28 
+(1, 'Cerdo'),                -- 29  
+(1, 'Aves'),                 -- 30 
+(1, 'Mariscos'),             -- 31
+(1, 'Varios'),               -- 32
+(1, 'Paquetes'),             -- 33
+(1, 'Comida Corrida'),       -- 34
+(1, 'Servicios');            -- 35
 /* 
    3. PRODUCTOS POR CATEGORÍA
  */
@@ -859,188 +857,170 @@ INSERT INTO producto (categoria_id, nombre, precio_unitario, descripcion, es_paq
 (27, 'Orden de Ensalada', 21.00, 'Guarnición', FALSE),
 (27, 'Orden de Puré de Papa', 21.00, 'Guarnición', FALSE);
 
--- CAT 28: INGREDIENTES EXTRAS
-INSERT INTO producto (categoria_id, nombre, precio_unitario, descripcion, es_paquete) VALUES
-(28, 'Ingrediente Extra Picada', 5.00, 'Extra', FALSE),
-(28, 'Ingrediente Extra Huarache', 15.50, 'Extra', FALSE),
-(28, 'Ingrediente Extra Memela', 15.50, 'Extra', FALSE),
-(28, 'Ingrediente Extra Empanada', 3.00, 'Extra', FALSE),
-(28, 'Extra Huevo Cocido', 15.00, 'Extra', FALSE),
-(28, 'Extra Huevo Estrellado', 15.00, 'Extra', FALSE),
-(28, 'Extra Aguacate 1pza', 5.00, 'Extra', FALSE),
-(28, 'Extra Frijol', 3.50, 'Extra', FALSE),
-(28, 'Extra Mole', 4.50, 'Extra', FALSE),
-(28, 'Extra Queso', 3.50, 'Extra', FALSE),
-(28, 'Extra Lechuga', 3.50, 'Extra', FALSE),
-(28, 'Extra Repollo', 3.50, 'Extra', FALSE),
-(28, 'Extra Caldo Mondongo', 10.50, 'Extra', FALSE),
-(28, 'Extra Caldo Pozole', 10.50, 'Extra', FALSE),
-(28, 'Extra Porción Gallina', 68.50, 'Extra', FALSE),
-(28, 'Extra Porción Maíz Pozolero', 16.00, 'Extra', FALSE),
-(28, 'Extra Porción de Mondongo', 39.00, 'Extra', FALSE),
-(28, 'Extra Porción Pozole', 39.00, 'Extra', FALSE);
 
--- CAT 29: RES (Se insertan en 0.00 para actualizar)
+-- CAT 28: RES (Se insertan en 0.00 para actualizar)
 INSERT INTO producto (categoria_id, nombre, precio_unitario, descripcion, es_paquete) VALUES
-(29, 'Bisteces a la Mexicana con frijoles refritos', 0.00, 'Plato fuerte', FALSE),
-(29, 'Fajitas de res a la mostaza con arroz blanco', 0.00, 'Plato fuerte', FALSE),
-(29, 'Medallones de Cuete a la Barbecue con papas', 0.00, 'Plato fuerte', FALSE),
-(29, 'Rollito de Carne relleno de verduras con arroz', 0.00, 'Plato fuerte', FALSE),
-(29, 'Tortitas de Carne de res deshebrada en chipotle', 0.00, 'Plato fuerte', FALSE),
-(29, 'Fajitas de Res adobadas con papas y frijoles', 0.00, 'Plato fuerte', FALSE),
-(29, 'Cuete Mechado de verduras con arroz blanco', 0.00, 'Plato fuerte', FALSE),
-(29, 'Ropa Vieja de Res con frijoles refritos', 0.00, 'Plato fuerte', FALSE),
-(29, 'Barbacoa de Res con frijoles refritos', 0.00, 'Plato fuerte', FALSE),
-(29, 'Medallones de Cuete a la mostaza con arroz', 0.00, 'Plato fuerte', FALSE),
-(29, 'Albondigas Enchipotladas con arroz blanco', 0.00, 'Plato fuerte', FALSE),
-(29, 'Medallones de Cuete en salsa de toronja', 0.00, 'Plato fuerte', FALSE),
-(29, 'Bisteces de Res a la Poblana con frijol', 0.00, 'Plato fuerte', FALSE),
-(29, 'Carne deshebrada a la Mexicana con frijol', 0.00, 'Plato fuerte', FALSE),
-(29, 'Bisteces de res al albañil con frijoles', 0.00, 'Plato fuerte', FALSE),
-(29, 'Birria de Res con frijoles refritos', 0.00, 'Plato fuerte', FALSE),
-(29, 'Carne Polaca de res con frijoles refritos', 0.00, 'Plato fuerte', FALSE),
-(29, 'Pastel de Carne con arroz blanco', 0.00, 'Plato fuerte', FALSE),
-(29, 'Bisteces Rancheros con frijoles refritos', 0.00, 'Plato fuerte', FALSE),
-(29, 'Brochetas de Res con ensalada', 0.00, 'Plato fuerte', FALSE),
-(29, 'Bisteces Arrieros de Res con frijoles', 0.00, 'Plato fuerte', FALSE),
-(29, 'Caldo de Mondongo (Platillo)', 0.00, 'Plato fuerte', FALSE),
-(29, 'Fajitas Lázaro de Bisteces con arroz blanco', 0.00, 'Plato fuerte', FALSE),
-(29, 'Medallones de Cuete en salsa chipotle', 0.00, 'Plato fuerte', FALSE),
-(29, 'Bisteces Encebollados de Res con frijoles', 0.00, 'Plato fuerte', FALSE),
-(29, 'Medallones de Cuete en Salsa de champiñones', 0.00, 'Plato fuerte', FALSE),
-(29, 'Milanesa de Res con ensalada y frijoles', 0.00, 'Plato fuerte', FALSE);
+(28, 'Bisteces a la Mexicana con frijoles refritos', 0.00, 'Plato fuerte', FALSE),
+(28, 'Fajitas de res a la mostaza con arroz blanco', 0.00, 'Plato fuerte', FALSE),
+(28, 'Medallones de Cuete a la Barbecue con papas', 0.00, 'Plato fuerte', FALSE),
+(28, 'Rollito de Carne relleno de verduras con arroz', 0.00, 'Plato fuerte', FALSE),
+(28, 'Tortitas de Carne de res deshebrada en chipotle', 0.00, 'Plato fuerte', FALSE),
+(28, 'Fajitas de Res adobadas con papas y frijoles', 0.00, 'Plato fuerte', FALSE),
+(28, 'Cuete Mechado de verduras con arroz blanco', 0.00, 'Plato fuerte', FALSE),
+(28, 'Ropa Vieja de Res con frijoles refritos', 0.00, 'Plato fuerte', FALSE),
+(28, 'Barbacoa de Res con frijoles refritos', 0.00, 'Plato fuerte', FALSE),
+(28, 'Medallones de Cuete a la mostaza con arroz', 0.00, 'Plato fuerte', FALSE),
+(28, 'Albondigas Enchipotladas con arroz blanco', 0.00, 'Plato fuerte', FALSE),
+(28, 'Medallones de Cuete en salsa de toronja', 0.00, 'Plato fuerte', FALSE),
+(28, 'Bisteces de Res a la Poblana con frijol', 0.00, 'Plato fuerte', FALSE),
+(28, 'Carne deshebrada a la Mexicana con frijol', 0.00, 'Plato fuerte', FALSE),
+(28, 'Bisteces de res al albañil con frijoles', 0.00, 'Plato fuerte', FALSE),
+(28, 'Birria de Res con frijoles refritos', 0.00, 'Plato fuerte', FALSE),
+(28, 'Carne Polaca de res con frijoles refritos', 0.00, 'Plato fuerte', FALSE),
+(28, 'Pastel de Carne con arroz blanco', 0.00, 'Plato fuerte', FALSE),
+(28, 'Bisteces Rancheros con frijoles refritos', 0.00, 'Plato fuerte', FALSE),
+(28, 'Brochetas de Res con ensalada', 0.00, 'Plato fuerte', FALSE),
+(28, 'Bisteces Arrieros de Res con frijoles', 0.00, 'Plato fuerte', FALSE),
+(28, 'Caldo de Mondongo (Platillo)', 0.00, 'Plato fuerte', FALSE),
+(28, 'Fajitas Lázaro de Bisteces con arroz blanco', 0.00, 'Plato fuerte', FALSE),
+(28, 'Medallones de Cuete en salsa chipotle', 0.00, 'Plato fuerte', FALSE),
+(28, 'Bisteces Encebollados de Res con frijoles', 0.00, 'Plato fuerte', FALSE),
+(28, 'Medallones de Cuete en Salsa de champiñones', 0.00, 'Plato fuerte', FALSE),
+(28, 'Milanesa de Res con ensalada y frijoles', 0.00, 'Plato fuerte', FALSE);
 
--- CAT 30: CERDO
+-- CAT 29: CERDO
 INSERT INTO producto (categoria_id, nombre, precio_unitario, descripcion, es_paquete) VALUES
-(30, 'Cerdo Enchilado con arroz blanco', 0.00, 'Plato fuerte', FALSE),
-(30, 'Costillas de Cerdo adobadas con arroz', 0.00, 'Plato fuerte', FALSE),
-(30, 'Bisteces Encebollados de Cerdo con ensalada', 0.00, 'Plato fuerte', FALSE),
-(30, 'Cerdo en Salsa de Cacahuate con frijoles', 0.00, 'Plato fuerte', FALSE),
-(30, 'Cochinita Pibil con papas y arroz blanco', 0.00, 'Plato fuerte', FALSE),
-(30, 'Milanesa de Cerdo con ensalada', 0.00, 'Plato fuerte', FALSE),
-(30, 'Costillas de Cerdo de Salsa Verde con arroz', 0.00, 'Plato fuerte', FALSE),
-(30, 'Cerdo a la Coca Cola con papas de arroz', 0.00, 'Plato fuerte', FALSE),
-(30, 'Costillas de Cerdo en salsa agridulce', 0.00, 'Plato fuerte', FALSE),
-(30, 'Puerco en Salsa de Perejil con papas', 0.00, 'Plato fuerte', FALSE),
-(30, 'Mole de Cerdo con arroz blanco', 0.00, 'Plato fuerte', FALSE),
-(30, 'Cerdo al Pipián con arroz blanco', 0.00, 'Plato fuerte', FALSE),
-(30, 'Cerdo en Salsa Pasilla con arroz blanco', 0.00, 'Plato fuerte', FALSE),
-(30, 'Carne de Cerdo en salsa de ciruela pasa', 0.00, 'Plato fuerte', FALSE),
-(30, 'Carne de Cerdo Adobada con arroz blanco', 0.00, 'Plato fuerte', FALSE),
-(30, 'Chuletas de Cerdo a la barbecue con ensalada', 0.00, 'Plato fuerte', FALSE),
-(30, 'Carne de Cerdo en salsa verde con arroz', 0.00, 'Plato fuerte', FALSE),
-(30, 'Cerdo en Salsa agridulce con arroz blanco', 0.00, 'Plato fuerte', FALSE),
-(30, 'Cerdo a la Naranja con arroz blanco', 0.00, 'Plato fuerte', FALSE),
-(30, 'Cerdo a la Mestiza con arroz blanco', 0.00, 'Plato fuerte', FALSE),
-(30, 'Cerdo a la Cerveza con arroz blanco', 0.00, 'Plato fuerte', FALSE),
-(30, 'Cerdo a la Barbecue con papas y arroz', 0.00, 'Plato fuerte', FALSE),
-(30, 'Costillas de Cerdo enchipotladas con papas', 0.00, 'Plato fuerte', FALSE),
-(30, 'Chuletas de Cerdo a la Plancha con ensalada', 0.00, 'Plato fuerte', FALSE),
-(30, 'Cerdo con calabacitas y granos de elote', 0.00, 'Plato fuerte', FALSE),
-(30, 'Cerdo en Salsa de Tamarindo con arroz', 0.00, 'Plato fuerte', FALSE),
-(30, 'Cerdo a la Hawaiana con arroz blanco', 0.00, 'Plato fuerte', FALSE),
-(30, 'Cerdo con Verdolagas con frijoles refritos', 0.00, 'Plato fuerte', FALSE);
+(29, 'Cerdo Enchilado con arroz blanco', 0.00, 'Plato fuerte', FALSE),
+(29, 'Costillas de Cerdo adobadas con arroz', 0.00, 'Plato fuerte', FALSE),
+(29, 'Bisteces Encebollados de Cerdo con ensalada', 0.00, 'Plato fuerte', FALSE),
+(29, 'Cerdo en Salsa de Cacahuate con frijoles', 0.00, 'Plato fuerte', FALSE),
+(29, 'Cochinita Pibil con papas y arroz blanco', 0.00, 'Plato fuerte', FALSE),
+(29, 'Milanesa de Cerdo con ensalada', 0.00, 'Plato fuerte', FALSE),
+(29, 'Costillas de Cerdo de Salsa Verde con arroz', 0.00, 'Plato fuerte', FALSE),
+(29, 'Cerdo a la Coca Cola con papas de arroz', 0.00, 'Plato fuerte', FALSE),
+(29, 'Costillas de Cerdo en salsa agridulce', 0.00, 'Plato fuerte', FALSE),
+(29, 'Puerco en Salsa de Perejil con papas', 0.00, 'Plato fuerte', FALSE),
+(29, 'Mole de Cerdo con arroz blanco', 0.00, 'Plato fuerte', FALSE),
+(29, 'Cerdo al Pipián con arroz blanco', 0.00, 'Plato fuerte', FALSE),
+(29, 'Cerdo en Salsa Pasilla con arroz blanco', 0.00, 'Plato fuerte', FALSE),
+(29, 'Carne de Cerdo en salsa de ciruela pasa', 0.00, 'Plato fuerte', FALSE),
+(29, 'Carne de Cerdo Adobada con arroz blanco', 0.00, 'Plato fuerte', FALSE),
+(29, 'Chuletas de Cerdo a la barbecue con ensalada', 0.00, 'Plato fuerte', FALSE),
+(29, 'Carne de Cerdo en salsa verde con arroz', 0.00, 'Plato fuerte', FALSE),
+(29, 'Cerdo en Salsa agridulce con arroz blanco', 0.00, 'Plato fuerte', FALSE),
+(29, 'Cerdo a la Naranja con arroz blanco', 0.00, 'Plato fuerte', FALSE),
+(29, 'Cerdo a la Mestiza con arroz blanco', 0.00, 'Plato fuerte', FALSE),
+(29, 'Cerdo a la Cerveza con arroz blanco', 0.00, 'Plato fuerte', FALSE),
+(29, 'Cerdo a la Barbecue con papas y arroz', 0.00, 'Plato fuerte', FALSE),
+(29, 'Costillas de Cerdo enchipotladas con papas', 0.00, 'Plato fuerte', FALSE),
+(29, 'Chuletas de Cerdo a la Plancha con ensalada', 0.00, 'Plato fuerte', FALSE),
+(29, 'Cerdo con calabacitas y granos de elote', 0.00, 'Plato fuerte', FALSE),
+(29, 'Cerdo en Salsa de Tamarindo con arroz', 0.00, 'Plato fuerte', FALSE),
+(29, 'Cerdo a la Hawaiana con arroz blanco', 0.00, 'Plato fuerte', FALSE),
+(29, 'Cerdo con Verdolagas con frijoles refritos', 0.00, 'Plato fuerte', FALSE);
 
--- CAT 31: AVES
-INSERT INTO producto (categoria_id, nombre, precio_unitario, descripcion, es_paquete) VALUES
-(31, 'Pollos a la Naranja con arroz blanco', 0.00, 'Plato fuerte', FALSE),
-(31, 'Pollo a la barbecue con papitas y arroz', 0.00, 'Plato fuerte', FALSE),
-(31, 'Pollo a la crema de Queso con arroz', 0.00, 'Plato fuerte', FALSE),
-(31, 'Filete de Pollo a la Mantequilla con ensalada', 0.00, 'Plato fuerte', FALSE),
-(31, 'Pollo a la Hawaiana con arroz blanco', 0.00, 'Plato fuerte', FALSE),
-(31, 'Pechugas rellenas de Jamón y Queso', 0.00, 'Plato fuerte', FALSE),
-(31, 'Pollo en Pipián con arroz blanco y frijoles', 0.00, 'Plato fuerte', FALSE),
-(31, 'Mole de Pollo con arroz blanco', 0.00, 'Plato fuerte', FALSE),
-(31, 'Milanesa de Pollo con Ensalada', 0.00, 'Plato fuerte', FALSE),
-(31, 'Pollo Kentucky con ensalada', 0.00, 'Plato fuerte', FALSE),
-(31, 'Pollo Adobado con arroz blanco', 0.00, 'Plato fuerte', FALSE),
-(31, 'Barbacoa de Pollo con arroz blanco', 0.00, 'Plato fuerte', FALSE),
-(31, 'Filete de Pollo al Orégano con arroz', 0.00, 'Plato fuerte', FALSE),
-(31, 'Pollo en Salsa de Limón con arroz blanco', 0.00, 'Plato fuerte', FALSE),
-(31, 'Filete de Pollo en Salsa de chile morita', 0.00, 'Plato fuerte', FALSE),
-(31, 'Pollo Entomatado con arroz blanco', 0.00, 'Plato fuerte', FALSE),
-(31, 'Pollo Campirano con papas y arroz blanco', 0.00, 'Plato fuerte', FALSE),
-(31, 'Pollo con Champiñones con arroz blanco', 0.00, 'Plato fuerte', FALSE),
-(31, 'Pollo Frito con ensalada', 0.00, 'Plato fuerte', FALSE),
-(31, 'Pollo en Escabeche con arroz blanco', 0.00, 'Plato fuerte', FALSE),
-(31, 'Pollo en Salsa de Perejil con arroz blanco', 0.00, 'Plato fuerte', FALSE),
-(31, 'Pollo Pibil con arroz blanco', 0.00, 'Plato fuerte', FALSE),
-(31, 'Pechugas a la Cordón Blue con ensalada', 0.00, 'Plato fuerte', FALSE),
-(31, 'Pollo en Mole Verde con arroz blanco', 0.00, 'Plato fuerte', FALSE),
-(31, 'Pollo Supremo con arroz blanco', 0.00, 'Plato fuerte', FALSE),
-(31, 'Filete de Pollo en Salsa de aguacate', 0.00, 'Plato fuerte', FALSE),
-(31, 'Pollo a la Vizcaina con frijoles refritos', 0.00, 'Plato fuerte', FALSE),
-(31, 'Estofado de Pollo con arroz blanco', 0.00, 'Plato fuerte', FALSE),
-(31, 'Pollo bañado en Salsa Verde con arroz', 0.00, 'Plato fuerte', FALSE),
-(31, 'Pollo Enchipotlado con arroz blanco', 0.00, 'Plato fuerte', FALSE),
-(31, 'Filete de Pollo a la barbecue con ensalada', 0.00, 'Plato fuerte', FALSE),
-(31, 'Pollo a la Jardinera con arroz blanco', 0.00, 'Plato fuerte', FALSE),
-(31, 'Pechugas adobadas con papas y arroz', 0.00, 'Plato fuerte', FALSE),
-(31, 'Tortitas de Pollo Deshebrado en salsa verde', 0.00, 'Plato fuerte', FALSE);
 
--- CAT 32: MARISCOS
+-- CAT 30: AVES
 INSERT INTO producto (categoria_id, nombre, precio_unitario, descripcion, es_paquete) VALUES
-(32, 'Filete de Pescado a la Mantequilla', 0.00, 'Plato fuerte', FALSE),
-(32, 'Filete de Pescado a la Pimienta con ensalada', 0.00, 'Plato fuerte', FALSE),
-(32, 'Filete de Pescado empanizado con ensalada', 0.00, 'Plato fuerte', FALSE),
-(32, 'Filete de Pescado a la Veracruzana', 0.00, 'Plato fuerte', FALSE),
-(32, 'Filete de Pescado al mojo de ajo', 0.00, 'Plato fuerte', FALSE),
-(32, 'Filete de Pescado a la Poblana con arroz', 0.00, 'Plato fuerte', FALSE),
-(32, 'Filete de Pescado en salsa de Perejil', 0.00, 'Plato fuerte', FALSE),
-(32, 'Pulpos al Ajillo con arroz blanco', 0.00, 'Plato fuerte', FALSE),
-(32, 'Pulpos a la Veracruzana con arroz blanco', 0.00, 'Plato fuerte', FALSE),
-(32, 'Pulpos Enchipotlados con arroz blanco', 0.00, 'Plato fuerte', FALSE),
-(32, 'Pulpos al Mojo de Ajo con arroz blanco', 0.00, 'Plato fuerte', FALSE),
-(32, 'Pulpo a la Diabla con arroz blanco', 0.00, 'Plato fuerte', FALSE);
+(30, 'Pollos a la Naranja con arroz blanco', 0.00, 'Plato fuerte', FALSE),
+(30, 'Pollo a la barbecue con papitas y arroz', 0.00, 'Plato fuerte', FALSE),
+(30, 'Pollo a la crema de Queso con arroz', 0.00, 'Plato fuerte', FALSE),
+(30, 'Filete de Pollo a la Mantequilla con ensalada', 0.00, 'Plato fuerte', FALSE),
+(30, 'Pollo a la Hawaiana con arroz blanco', 0.00, 'Plato fuerte', FALSE),
+(30, 'Pechugas rellenas de Jamón y Queso', 0.00, 'Plato fuerte', FALSE),
+(30, 'Pollo en Pipián con arroz blanco y frijoles', 0.00, 'Plato fuerte', FALSE),
+(30, 'Mole de Pollo con arroz blanco', 0.00, 'Plato fuerte', FALSE),
+(30, 'Milanesa de Pollo con Ensalada', 0.00, 'Plato fuerte', FALSE),
+(30, 'Pollo Kentucky con ensalada', 0.00, 'Plato fuerte', FALSE),
+(30, 'Pollo Adobado con arroz blanco', 0.00, 'Plato fuerte', FALSE),
+(30, 'Barbacoa de Pollo con arroz blanco', 0.00, 'Plato fuerte', FALSE),
+(30, 'Filete de Pollo al Orégano con arroz', 0.00, 'Plato fuerte', FALSE),
+(30, 'Pollo en Salsa de Limón con arroz blanco', 0.00, 'Plato fuerte', FALSE),
+(30, 'Filete de Pollo en Salsa de chile morita', 0.00, 'Plato fuerte', FALSE),
+(30, 'Pollo Entomatado con arroz blanco', 0.00, 'Plato fuerte', FALSE),
+(30, 'Pollo Campirano con papas y arroz blanco', 0.00, 'Plato fuerte', FALSE),
+(30, 'Pollo con Champiñones con arroz blanco', 0.00, 'Plato fuerte', FALSE),
+(30, 'Pollo Frito con ensalada', 0.00, 'Plato fuerte', FALSE),
+(30, 'Pollo en Escabeche con arroz blanco', 0.00, 'Plato fuerte', FALSE),
+(30, 'Pollo en Salsa de Perejil con arroz blanco', 0.00, 'Plato fuerte', FALSE),
+(30, 'Pollo Pibil con arroz blanco', 0.00, 'Plato fuerte', FALSE),
+(30, 'Pechugas a la Cordón Blue con ensalada', 0.00, 'Plato fuerte', FALSE),
+(30, 'Pollo en Mole Verde con arroz blanco', 0.00, 'Plato fuerte', FALSE),
+(30, 'Pollo Supremo con arroz blanco', 0.00, 'Plato fuerte', FALSE),
+(30, 'Filete de Pollo en Salsa de aguacate', 0.00, 'Plato fuerte', FALSE),
+(30, 'Pollo a la Vizcaina con frijoles refritos', 0.00, 'Plato fuerte', FALSE),
+(30, 'Estofado de Pollo con arroz blanco', 0.00, 'Plato fuerte', FALSE),
+(30, 'Pollo bañado en Salsa Verde con arroz', 0.00, 'Plato fuerte', FALSE),
+(30, 'Pollo Enchipotlado con arroz blanco', 0.00, 'Plato fuerte', FALSE),
+(30, 'Filete de Pollo a la barbecue con ensalada', 0.00, 'Plato fuerte', FALSE),
+(30, 'Pollo a la Jardinera con arroz blanco', 0.00, 'Plato fuerte', FALSE),
+(30, 'Pechugas adobadas con papas y arroz', 0.00, 'Plato fuerte', FALSE),
+(30, 'Tortitas de Pollo Deshebrado en salsa verde', 0.00, 'Plato fuerte', FALSE);
 
--- CAT 33: VARIOS
+-- CAT 31: MARISCOS
 INSERT INTO producto (categoria_id, nombre, precio_unitario, descripcion, es_paquete) VALUES
-(33, 'Ensalada de Pollo con tostadas', 0.00, 'Platillo', FALSE),
-(33, 'Enchiladas Verdes con Pollo', 0.00, 'Platillo', FALSE),
-(33, 'Enfrijoladas de Pollo', 0.00, 'Platillo', FALSE),
-(33, 'Crepas de Pollo con ensalada', 0.00, 'Platillo', FALSE),
-(33, 'Croquetas de Pollo con ensalada', 0.00, 'Platillo', FALSE),
-(33, 'Enchiladas Poblanas con Pollo', 0.00, 'Platillo', FALSE),
-(33, 'Spaguetti con trocitos de Pollo a la Poblana', 0.00, 'Platillo', FALSE),
-(33, 'Chiles Rellenos de Queso bañados en Tomate', 0.00, 'Platillo', FALSE),
-(33, 'Chayote relleno de Picadillo Gratinado', 0.00, 'Platillo', FALSE),
-(33, 'Tinga Poblana con frijoles refritos', 0.00, 'Platillo', FALSE),
-(33, 'Spaguetti a la Boloñesa con Carne molida', 0.00, 'Platillo', FALSE),
-(33, 'Entomatadas con Pollo', 0.00, 'Platillo', FALSE),
-(33, 'Calabacitas Granitadas rellenas de carne', 0.00, 'Platillo', FALSE),
-(33, 'Calabacitas rellenas de Jamón y Queso', 0.00, 'Platillo', FALSE),
-(33, 'Chile Relleno de picadillo bañado en salsa', 0.00, 'Platillo', FALSE),
-(33, 'Salpicón Tabasqueño con Tostadas', 0.00, 'Platillo', FALSE),
-(33, 'Tacos Árabes con ensalada', 0.00, 'Platillo', FALSE),
-(33, 'Spaguetti a la Mantequilla con Jamón y Tocino', 0.00, 'Platillo', FALSE),
-(33, 'Chayote Capeado relleno de Jamón y Queso', 0.00, 'Platillo', FALSE),
-(33, 'Papas Rellenas de jamón y queso', 0.00, 'Platillo', FALSE),
-(33, 'Croquetas de Queso con ensalada', 0.00, 'Platillo', FALSE),
-(33, 'Coliflor Lampreado rellena de Queso', 0.00, 'Platillo', FALSE),
-(33, 'Acelgas rellenas de Jamón y Queso', 0.00, 'Platillo', FALSE);
+(31, 'Filete de Pescado a la Mantequilla', 0.00, 'Plato fuerte', FALSE),
+(31, 'Filete de Pescado a la Pimienta con ensalada', 0.00, 'Plato fuerte', FALSE),
+(31, 'Filete de Pescado empanizado con ensalada', 0.00, 'Plato fuerte', FALSE),
+(31, 'Filete de Pescado a la Veracruzana', 0.00, 'Plato fuerte', FALSE),
+(31, 'Filete de Pescado al mojo de ajo', 0.00, 'Plato fuerte', FALSE),
+(31, 'Filete de Pescado a la Poblana con arroz', 0.00, 'Plato fuerte', FALSE),
+(31, 'Filete de Pescado en salsa de Perejil', 0.00, 'Plato fuerte', FALSE),
+(31, 'Pulpos al Ajillo con arroz blanco', 0.00, 'Plato fuerte', FALSE),
+(31, 'Pulpos a la Veracruzana con arroz blanco', 0.00, 'Plato fuerte', FALSE),
+(31, 'Pulpos Enchipotlados con arroz blanco', 0.00, 'Plato fuerte', FALSE),
+(31, 'Pulpos al Mojo de Ajo con arroz blanco', 0.00, 'Plato fuerte', FALSE),
+(31, 'Pulpo a la Diabla con arroz blanco', 0.00, 'Plato fuerte', FALSE);
 
--- CAT 34: PAQUETES
-INSERT INTO producto (categoria_id, nombre, precio_unitario, descripcion, es_paquete) VALUES
-(34, 'Paquete Quemes', 95.00, 'Caldo Mondongo/Pozole + aguas + tostadas', TRUE),
-(34, 'Paquete Regional', 100.00, 'Carne Chinameca + aguas + tortillas', TRUE),
-(34, 'Paquete Desayunes', 100.00, 'Huevos Div/Ranc/Mot + aguas/cafe + tortillas', TRUE),
-(34, 'Paquete Llenes', 105.00, 'Chilaquiles Bistec/Chinameca + aguas', TRUE),
-(34, 'Paquete Rico', 90.00, '1 Memela + aguas', TRUE),
-(34, 'Paquete Norteño', 150.00, 'Filete Tampiqueña/Chinameca + aguas + tortillas', TRUE),
-(34, 'Paquete Guste', 135.00, 'Cecina Huasteca/Chinameca + aguas + tortillas', TRUE),
-(34, 'Paquete Piques', 75.00, '3 Picaditas de Carne + aguas', TRUE),
-(34, 'Paquete Dobles', 75.00, 'Orden dobladas (Entom/Enfrij/Enmol) + aguas', TRUE),
-(34, 'Paquete Alcance', 60.00, '3 Empanadas sencillas + aguas', TRUE),
-(34, 'Paquete Nutras', 80.00, '2 Tostadas carne + 1 Platano frito + aguas', TRUE);
 
--- CAT 35: COMIDA CORRIDA
+-- CAT 32: VARIOS
 INSERT INTO producto (categoria_id, nombre, precio_unitario, descripcion, es_paquete) VALUES
-(35, 'Comida Corrida del Día', 89.00, 'Sopa, 4 Guisos a escoger, Postre y Agua rellenable', TRUE);
+(32, 'Ensalada de Pollo con tostadas', 0.00, 'Platillo', FALSE),
+(32, 'Enchiladas Verdes con Pollo', 0.00, 'Platillo', FALSE),
+(32, 'Enfrijoladas de Pollo', 0.00, 'Platillo', FALSE),
+(32, 'Crepas de Pollo con ensalada', 0.00, 'Platillo', FALSE),
+(32, 'Croquetas de Pollo con ensalada', 0.00, 'Platillo', FALSE),
+(32, 'Enchiladas Poblanas con Pollo', 0.00, 'Platillo', FALSE),
+(32, 'Spaguetti con trocitos de Pollo a la Poblana', 0.00, 'Platillo', FALSE),
+(32, 'Chiles Rellenos de Queso bañados en Tomate', 0.00, 'Platillo', FALSE),
+(32, 'Chayote relleno de Picadillo Gratinado', 0.00, 'Platillo', FALSE),
+(32, 'Tinga Poblana con frijoles refritos', 0.00, 'Platillo', FALSE),
+(32, 'Spaguetti a la Boloñesa con Carne molida', 0.00, 'Platillo', FALSE),
+(32, 'Entomatadas con Pollo', 0.00, 'Platillo', FALSE),
+(32, 'Calabacitas Granitadas rellenas de carne', 0.00, 'Platillo', FALSE),
+(32, 'Calabacitas rellenas de Jamón y Queso', 0.00, 'Platillo', FALSE),
+(32, 'Chile Relleno de picadillo bañado en salsa', 0.00, 'Platillo', FALSE),
+(32, 'Salpicón Tabasqueño con Tostadas', 0.00, 'Platillo', FALSE),
+(32, 'Tacos Árabes con ensalada', 0.00, 'Platillo', FALSE),
+(32, 'Spaguetti a la Mantequilla con Jamón y Tocino', 0.00, 'Platillo', FALSE),
+(32, 'Chayote Capeado relleno de Jamón y Queso', 0.00, 'Platillo', FALSE),
+(32, 'Papas Rellenas de jamón y queso', 0.00, 'Platillo', FALSE),
+(32, 'Croquetas de Queso con ensalada', 0.00, 'Platillo', FALSE),
+(32, 'Coliflor Lampreado rellena de Queso', 0.00, 'Platillo', FALSE),
+(32, 'Acelgas rellenas de Jamón y Queso', 0.00, 'Platillo', FALSE);
 
--- CAT 36: SERVICIOS
+-- CAT 33: PAQUETES
 INSERT INTO producto (categoria_id, nombre, precio_unitario, descripcion, es_paquete) VALUES
-(36, 'Servicio a Domicilio (Compra > $165)', 35.00, 'Costo de envío', FALSE),
-(36, 'Servicio a Domicilio (Compra < $165)', 40.00, 'Costo de envío', FALSE);
+(33, 'Paquete Quemes', 95.00, 'Caldo Mondongo/Pozole + aguas + tostadas', TRUE),
+(33, 'Paquete Regional', 100.00, 'Carne Chinameca + aguas + tortillas', TRUE),
+(33, 'Paquete Desayunes', 100.00, 'Huevos Div/Ranc/Mot + aguas/cafe + tortillas', TRUE),
+(33, 'Paquete Llenes', 105.00, 'Chilaquiles Bistec/Chinameca + aguas', TRUE),
+(33, 'Paquete Rico', 90.00, '1 Memela + aguas', TRUE),
+(33, 'Paquete Norteño', 150.00, 'Filete Tampiqueña/Chinameca + aguas + tortillas', TRUE),
+(33, 'Paquete Guste', 135.00, 'Cecina Huasteca/Chinameca + aguas + tortillas', TRUE),
+(33, 'Paquete Piques', 75.00, '3 Picaditas de Carne + aguas', TRUE),
+(33, 'Paquete Dobles', 75.00, 'Orden dobladas (Entom/Enfrij/Enmol) + aguas', TRUE),
+(33, 'Paquete Alcance', 60.00, '3 Empanadas sencillas + aguas', TRUE),
+(33, 'Paquete Nutras', 80.00, '2 Tostadas carne + 1 Platano frito + aguas', TRUE);
+
+-- CAT 34: COMIDA CORRIDA
+INSERT INTO producto (categoria_id, nombre, precio_unitario, descripcion, es_paquete) VALUES
+(34, 'Comida Corrida del Día', 89.00, 'Sopa, 4 Guisos a escoger, Postre y Agua rellenable', TRUE);
+
+-- CAT 35: SERVICIOS
+INSERT INTO producto (categoria_id, nombre, precio_unitario, descripcion, es_paquete) VALUES
+(35, 'Servicio a Domicilio (Compra > $165)', 35.00, 'Costo de envío', FALSE),
+(35, 'Servicio a Domicilio (Compra < $165)', 40.00, 'Costo de envío', FALSE);
 
 
 /*
@@ -1048,10 +1028,11 @@ INSERT INTO producto (categoria_id, nombre, precio_unitario, descripcion, es_paq
 */
 
 INSERT INTO categoria_modificador (nombre) VALUES 
-('Salsas'), 
-('Proteínas'), 
-('Extras Generales'),
-('Opciones Comida Corrida');
+INSERT INTO categoria_modificador (nombre) VALUES
+('Salsas'),              -- id 1
+('Proteínas'),           -- id 2
+('Extras Generales'),    -- id 3
+('Opciones Comida Corrida'); -- id 4
 
 INSERT INTO modificador (categoria_modificador_id, nombre, precio) VALUES 
 -- G1: Salsas
@@ -1069,11 +1050,24 @@ INSERT INTO modificador (categoria_modificador_id, nombre, precio) VALUES
 (2, 'Con Bistec', 20.00),
 
 -- G3: Extras Generales
-(3, 'Extra Crema', 5.00),
-(3, 'Extra Queso', 8.00),
-(3, 'Sin Cebolla', 0.00),
-(3, 'Orden de Aguacate', 27.00),
-(3, 'Orden de Frijol', 22.50),
+(3, 'Ingrediente Extra Picada', 5.00),
+(3, 'Ingrediente Extra Huarache', 15.50),
+(3, 'Ingrediente Extra Memela', 15.50),
+(3, 'Ingrediente Extra Empanada', 3.00),
+(3, 'Extra Huevo Cocido', 15.00),
+(3, 'Extra Huevo Estrellado', 15.00),
+(3, 'Extra Aguacate 1pza', 5.00),
+(3, 'Extra Frijol', 3.50),
+(3, 'Extra Mole', 4.50),
+(3, 'Extra Queso', 3.50),
+(3, 'Extra Lechuga', 3.50),
+(3, 'Extra Repollo', 3.50),
+(3, 'Extra Caldo Mondongo', 10.50),
+(3, 'Extra Caldo Pozole', 10.50),
+(3, 'Extra Porción Gallina', 68.50),
+(3, 'Extra Porción Maíz Pozolero', 16.00),
+(3, 'Extra Porción de Mondongo', 39.00),
+(3, 'Extra Porción Pozole', 39.00),
 
 -- G4: Opciones Comida Corrida (Precio 0 porque está incluido en el paquete)
 (4, 'Con Sopa del Día', 0.00),
@@ -1087,3 +1081,217 @@ INSERT INTO modificador (categoria_modificador_id, nombre, precio) VALUES
 (4, 'Agua: Horchata', 0.00),
 (4, 'Agua: Limón/Día', 0.00),
 (4, 'Postre del Día', 0.00);
+
+--PRODUCTO_COMPONENTE  (Paquetes + Comida Corrida)
+   
+
+--Paquete Quemes = 1 Caldo de Pozole + 1 Agua del Día
+INSERT INTO producto_componente (id_producto_padre, id_producto_hijo, cantidad) VALUES
+(
+  (SELECT producto_id FROM producto WHERE nombre = 'Paquete Quemes'),
+  (SELECT producto_id FROM producto 
+     WHERE nombre = 'Caldo de Pozole' AND categoria_id = 14),
+  1
+),
+(
+  (SELECT producto_id FROM producto WHERE nombre = 'Paquete Quemes'),
+  (SELECT producto_id FROM producto 
+     WHERE nombre = 'Agua del Día (Lunes-Viernes)' AND categoria_id = 19),
+  1
+);
+
+--Paquete Regional = 1 Carne de Chinameca + 1 Agua del Día + 1 Orden de Tortillas
+INSERT INTO producto_componente (id_producto_padre, id_producto_hijo, cantidad) VALUES
+(
+  (SELECT producto_id FROM producto WHERE nombre = 'Paquete Regional'),
+  (SELECT producto_id FROM producto 
+     WHERE nombre = 'Carne de Chinameca' AND categoria_id = 12),
+  1
+),
+(
+  (SELECT producto_id FROM producto WHERE nombre = 'Paquete Regional'),
+  (SELECT producto_id FROM producto 
+     WHERE nombre = 'Agua del Día (Lunes-Viernes)' AND categoria_id = 19),
+  1
+),
+(
+  (SELECT producto_id FROM producto WHERE nombre = 'Paquete Regional'),
+  (SELECT producto_id FROM producto 
+     WHERE nombre = 'Orden de Tortillas a mano 3pzs' AND categoria_id = 27),
+  1
+);
+
+-- Paquete Desayunes = 1 Motuleños + 1 Café con leche grande + 1 Orden de Tortillas
+INSERT INTO producto_componente (id_producto_padre, id_producto_hijo, cantidad) VALUES
+(
+  (SELECT producto_id FROM producto WHERE nombre = 'Paquete Desayunes'),
+  (SELECT producto_id FROM producto 
+     WHERE nombre = 'Motuleños' AND categoria_id = 11),
+  1
+),
+(
+  (SELECT producto_id FROM producto WHERE nombre = 'Paquete Desayunes'),
+  (SELECT producto_id FROM producto 
+     WHERE nombre = 'Café con leche grande' AND categoria_id = 20),
+  1
+),
+(
+  (SELECT producto_id FROM producto WHERE nombre = 'Paquete Desayunes'),
+  (SELECT producto_id FROM producto 
+     WHERE nombre = 'Orden de Tortillas a mano 3pzs' AND categoria_id = 27),
+  1
+);
+
+--Paquete Llenes = 1 Chilaquiles c/Pollo y Bisteck + 1 Agua del Día
+INSERT INTO producto_componente (id_producto_padre, id_producto_hijo, cantidad) VALUES
+(
+  (SELECT producto_id FROM producto WHERE nombre = 'Paquete Llenes'),
+  (SELECT producto_id FROM producto 
+     WHERE nombre = 'Chilaquiles con pollo y bistec' AND categoria_id = 12),
+  1
+),
+(
+  (SELECT producto_id FROM producto WHERE nombre = 'Paquete Llenes'),
+  (SELECT producto_id FROM producto 
+     WHERE nombre = 'Agua del Día (Lunes-Viernes)' AND categoria_id = 19),
+  1
+);
+
+-- Paquete Rico = 1 Memela de carne (usamos Memela Carne asada) + 1 Agua del Día
+INSERT INTO producto_componente (id_producto_padre, id_producto_hijo, cantidad) VALUES
+(
+  (SELECT producto_id FROM producto WHERE nombre = 'Paquete Rico'),
+  (SELECT producto_id FROM producto 
+     WHERE nombre = 'Carne asada' AND categoria_id = 2),  -- Memela carne asada
+  1
+),
+(
+  (SELECT producto_id FROM producto WHERE nombre = 'Paquete Rico'),
+  (SELECT producto_id FROM producto 
+     WHERE nombre = 'Agua del Día (Lunes-Viernes)' AND categoria_id = 19),
+  1
+);
+
+-- Paquete Norteño = 1 Filete a la Tampiqueña + 1 Agua del Día + 1 Orden de Tortillas
+INSERT INTO producto_componente (id_producto_padre, id_producto_hijo, cantidad) VALUES
+(
+  (SELECT producto_id FROM producto WHERE nombre = 'Paquete Norteño'),
+  (SELECT producto_id FROM producto 
+     WHERE nombre = 'Filete a la Tampiqueña' AND categoria_id = 12),
+  1
+),
+(
+  (SELECT producto_id FROM producto WHERE nombre = 'Paquete Norteño'),
+  (SELECT producto_id FROM producto 
+     WHERE nombre = 'Agua del Día (Lunes-Viernes)' AND categoria_id = 19),
+  1
+),
+(
+  (SELECT producto_id FROM producto WHERE nombre = 'Paquete Norteño'),
+  (SELECT producto_id FROM producto 
+     WHERE nombre = 'Orden de Tortillas a mano 3pzs' AND categoria_id = 27),
+  1
+);
+
+-- Paquete Guste = 1 Cecina Huasteca + 1 Agua del Día + 1 Orden de Tortillas
+INSERT INTO producto_componente (id_producto_padre, id_producto_hijo, cantidad) VALUES
+(
+  (SELECT producto_id FROM producto WHERE nombre = 'Paquete Guste'),
+  (SELECT producto_id FROM producto 
+     WHERE nombre = 'Cecina Huasteca' AND categoria_id = 12),
+  1
+),
+(
+  (SELECT producto_id FROM producto WHERE nombre = 'Paquete Guste'),
+  (SELECT producto_id FROM producto 
+     WHERE nombre = 'Agua del Día (Lunes-Viernes)' AND categoria_id = 19),
+  1
+),
+(
+  (SELECT producto_id FROM producto WHERE nombre = 'Paquete Guste'),
+  (SELECT producto_id FROM producto 
+     WHERE nombre = 'Orden de Tortillas a mano 3pzs' AND categoria_id = 27),
+  1
+);
+
+--Paquete Piques = 3 Picaditas de carne (Picada Carne asada) + 1 Agua del Día
+INSERT INTO producto_componente (id_producto_padre, id_producto_hijo, cantidad) VALUES
+(
+  (SELECT producto_id FROM producto WHERE nombre = 'Paquete Piques'),
+  (SELECT producto_id FROM producto 
+     WHERE nombre = 'Carne asada' AND categoria_id = 1),  -- Picada carne asada
+  3
+),
+(
+  (SELECT producto_id FROM producto WHERE nombre = 'Paquete Piques'),
+  (SELECT producto_id FROM producto 
+     WHERE nombre = 'Agua del Día (Lunes-Viernes)' AND categoria_id = 19),
+  1
+);
+
+--Paquete Dobles = 1 Orden de Dobladas (Enfrijoladas) + 1 Agua del Día
+INSERT INTO producto_componente (id_producto_padre, id_producto_hijo, cantidad) VALUES
+(
+  (SELECT producto_id FROM producto WHERE nombre = 'Paquete Dobles'),
+  (SELECT producto_id FROM producto 
+     WHERE nombre = 'Enfrijoladas con pollo (3 pzs)' AND categoria_id = 8),
+  1
+),
+(
+  (SELECT producto_id FROM producto WHERE nombre = 'Paquete Dobles'),
+  (SELECT producto_id FROM producto 
+     WHERE nombre = 'Agua del Día (Lunes-Viernes)' AND categoria_id = 19),
+  1
+);
+
+--Paquete Alcance = 3 Empanadas sencillas de carne (Empanada Carne asada) + 1 Agua del Día
+INSERT INTO producto_componente (id_producto_padre, id_producto_hijo, cantidad) VALUES
+(
+  (SELECT producto_id FROM producto WHERE nombre = 'Paquete Alcance'),
+  (SELECT producto_id FROM producto 
+     WHERE nombre = 'Carne asada' AND categoria_id = 6),  -- Empanada carne asada
+  3
+),
+(
+  (SELECT producto_id FROM producto WHERE nombre = 'Paquete Alcance'),
+  (SELECT producto_id FROM producto 
+     WHERE nombre = 'Agua del Día (Lunes-Viernes)' AND categoria_id = 19),
+  1
+);
+
+-- Paquete Nutras = 2 Tostadas de carne (Tostada Pollo) + 1 Plátano Frito + 1 Agua del Día
+INSERT INTO producto_componente (id_producto_padre, id_producto_hijo, cantidad) VALUES
+(
+  (SELECT producto_id FROM producto WHERE nombre = 'Paquete Nutras'),
+  (SELECT producto_id FROM producto 
+     WHERE nombre = 'Pollo' AND categoria_id = 7),  -- Tostada de pollo (como tostada de carne)
+  2
+),
+(
+  (SELECT producto_id FROM producto WHERE nombre = 'Paquete Nutras'),
+  (SELECT producto_id FROM producto 
+     WHERE nombre = 'Platanitos fritos' AND categoria_id = 9),
+  1
+),
+(
+  (SELECT producto_id FROM producto WHERE nombre = 'Paquete Nutras'),
+  (SELECT producto_id FROM producto 
+     WHERE nombre = 'Agua del Día (Lunes-Viernes)' AND categoria_id = 19),
+  1
+);
+
+-- Comida Corrida del Día = 1 Agua del Día + 1 Postre del día
+INSERT INTO producto_componente (id_producto_padre, id_producto_hijo, cantidad) VALUES
+(
+  (SELECT producto_id FROM producto WHERE nombre = 'Comida Corrida del Día'),
+  (SELECT producto_id FROM producto 
+     WHERE nombre = 'Agua del Día (Lunes-Viernes)' AND categoria_id = 19),
+  1
+),
+(
+  (SELECT producto_id FROM producto WHERE nombre = 'Comida Corrida del Día'),
+  (SELECT producto_id FROM producto 
+     WHERE nombre = 'Postre del día' AND categoria_id = 24),
+  1
+);
+
